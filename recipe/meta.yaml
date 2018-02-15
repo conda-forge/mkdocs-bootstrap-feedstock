@@ -1,23 +1,22 @@
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 package:
   name: mkdocs-bootstrap
   version: {{ version }}
 
 source:
-  fn: mkdocs-bootstrap-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/m/mkdocs-bootstrap/mkdocs-bootstrap-{{ version }}.tar.gz
-  sha256: 15084a6be59393fe5ecb9f04d09e674337a69fbd1e6ec5d9328e606a6c6cab36
+  sha256: 51482d9869af5838b3fe3bb4b0dd7a86bb055031dab970e39649b52ac8ade5b0
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
-  preserve_egg_dir: True
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
