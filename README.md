@@ -14,12 +14,15 @@ Summary: Bootstrap theme for MkDocs
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/mkdocs-bootstrap-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/mkdocs-bootstrap-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/mkdocs-bootstrap-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/mkdocs-bootstrap-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mkdocs-bootstrap/badges/version.svg)](https://anaconda.org/conda-forge/mkdocs-bootstrap)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mkdocs-bootstrap/badges/downloads.svg)](https://anaconda.org/conda-forge/mkdocs-bootstrap)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-mkdocs--bootstrap-green.svg)](https://anaconda.org/conda-forge/mkdocs-bootstrap) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/mkdocs-bootstrap.svg)](https://anaconda.org/conda-forge/mkdocs-bootstrap) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/mkdocs-bootstrap.svg)](https://anaconda.org/conda-forge/mkdocs-bootstrap) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/mkdocs-bootstrap.svg)](https://anaconda.org/conda-forge/mkdocs-bootstrap) |
 
 Installing mkdocs-bootstrap
 ===========================
