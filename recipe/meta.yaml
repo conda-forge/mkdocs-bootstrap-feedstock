@@ -1,4 +1,4 @@
-{% set version = "1.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: mkdocs-bootstrap
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/mkdocs-bootstrap/mkdocs-bootstrap-{{ version }}.tar.gz
-  sha256: 7efc2e12dd8b3a658cdfc58a31f10103f69abffa77369e9ea62ea325eb6eb0d8
+  sha256: b13cb33c576a4a6e6917ce9f352578eea84774497587a49b650ce0056e18bd7a
 
 build:
   number: 0
