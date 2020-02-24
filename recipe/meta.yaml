@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.1" %}
 
 package:
   name: mkdocs-bootstrap
@@ -6,27 +6,33 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/mkdocs-bootstrap/mkdocs-bootstrap-{{ version }}.tar.gz
-  sha256: b13cb33c576a4a6e6917ce9f352578eea84774497587a49b650ce0056e18bd7a
+  sha256: 6ed37250a1dd0c738c61643b9144791db27ce2a0eb3a8209d3c2f93380981603
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.5
     - pip
   run:
-    - python
+    - python >=3.5
+    - mkdocs >=1.1
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - mkdocs_bootstrap
 
 about:
   home: http://www.mkdocs.org
-  license: BSD 2-Clause
+  license: BSD-2-Clause
+  license_file: LICENSE
   summary: 'Bootstrap theme for MkDocs'
 
 extra:
