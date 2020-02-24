@@ -14,19 +14,24 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.5
     - pip
   run:
-    - python
+    - python >=3.5
+    - mkdocs >=1.1
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - mkdocs_bootstrap
 
 about:
   home: http://www.mkdocs.org
-  license: BSD 2-Clause
+  license: BSD-2-Clause
   license_file: LICENSE
   summary: 'Bootstrap theme for MkDocs'
 
